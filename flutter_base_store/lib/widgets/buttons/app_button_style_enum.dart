@@ -1,0 +1,4 @@
+enum AppButtonStyle {
+  blue,
+  red,
+}
