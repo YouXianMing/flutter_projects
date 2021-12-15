@@ -1,10 +1,10 @@
 # Flutter相关项目
 
-### flutter_useful 
-该项目是本人平时开发时用来测试第三方库、总结知识、测试代码所用的项目。在flutter的2.2.3版本以及2.5.0版本零警告(flutter_lints 1.0.4)。
-
 ### flutter_base_store 
 该项目是公司第二flutter项目，已经完成了初步的搭建，正准备动手开发时突遭优化而难产的项目。在flutter的2.2.3版本以及2.5.0版本零警告(flutter_lints 1.0.4)。
+
+### flutter_useful 
+该项目是本人平时开发时用来测试第三方库、总结知识、测试代码所用的项目。在flutter的2.2.3版本以及2.5.0版本零警告(flutter_lints 1.0.4)。
 
 *****
 上述项目均从[flutter_project_pkg](https://github.com/YouXianMing/flutter_project_pkg)引入了名为project_base_libs_pkg的package，作为项目的基础组件库使用。该基础组件库不依赖于任何项目，自带了example，可以单独运行。以下是该组件库中一些重要的类：
