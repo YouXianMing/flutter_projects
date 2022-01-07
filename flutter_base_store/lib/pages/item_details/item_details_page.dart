@@ -1,6 +1,5 @@
 import 'package:flutter_base_store/headers.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
-import 'package:flutter_base_store/networks/dio_network_extension.dart';
 
 class ItemDetailsPage extends NormalStatefulWidget {
   final PageArguments? arguments;
@@ -12,7 +11,8 @@ class ItemDetailsPage extends NormalStatefulWidget {
 
 class _ItemDetailsPageState extends NormalStatefulWidgetState<ItemDetailsPage> {
   @override
-  PreferredSizeWidget? appBar(BuildContext context) => NormalAppBar(context: context, title: NormalAppBar.titleWidget('商品详情页'));
+  PreferredSizeWidget? appBar(BuildContext context) =>
+      NormalAppBar(context: context, title: NormalAppBar.titleWidget('商品详情页'));
 
   @override
   Widget body(BuildContext context) {

@@ -2,11 +2,8 @@ import 'dart:io';
 import 'package:dio/adapter.dart';
 import 'package:flutter_base_store/headers.dart';
 import 'package:flutter_base_store/networks/proxy_ip.dart';
-import 'package:project_base_libs_pkg/base/network/base_network.dart';
-import 'package:project_base_libs_pkg/base/network/dio_network.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'package:project_base_libs_pkg/third_lib_dio.dart' as dio;
-import 'url.dart';
 
 extension DioNetworkExtension on BaseNetwork {
   void _loadingWidgetShow(dynamic loadingWidget) {
@@ -41,7 +38,10 @@ extension DioNetworkExtension on BaseNetwork {
     }
   }
 
-  void startRequestAndListen({Function(ResultModel, BaseNetwork)? onSuccess, Function(ResultModel, BaseNetwork)? onError, dynamic loadingWidget}) {
+  void startRequestAndListen(
+      {Function(ResultModel, BaseNetwork)? onSuccess,
+      Function(ResultModel, BaseNetwork)? onError,
+      dynamic loadingWidget}) {
     // 显示菊花
     _loadingWidgetShow(loadingWidget);
     startRequest().then((value) {

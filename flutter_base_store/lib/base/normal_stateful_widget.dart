@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_base_libs_pkg/base/widgets/base_stateful_widget.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'normal_page_build_mixin.dart';
 
@@ -7,7 +6,8 @@ abstract class NormalStatefulWidget extends BaseStatefulWidget {
   const NormalStatefulWidget({Key? key}) : super(key: key);
 }
 
-abstract class NormalStatefulWidgetState<T extends NormalStatefulWidget> extends BaseStatefulWidgetState<T> with NormalPageBuildMixin {
+abstract class NormalStatefulWidgetState<T extends NormalStatefulWidget> extends BaseStatefulWidgetState<T>
+    with NormalPageBuildMixin {
   @override
   Widget firstTimeLoadingWidgetStartLoading(BuildContext context) => firstTimeLoadingWidget.setDone();
 
