@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_base_libs_pkg/base/widgets/widget_callback_mixin.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

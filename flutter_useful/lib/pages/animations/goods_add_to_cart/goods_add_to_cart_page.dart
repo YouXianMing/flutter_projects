@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_useful/pages/base/normal_stateless_widget.dart';
 import 'package:flutter_useful/widgets/card_item_widget.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:project_base_libs_pkg/base/managers/animations_manager.dart';
-import 'package:project_base_libs_pkg/base/tools/util.dart';
 import 'package:project_base_libs_pkg/third_lib_get.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'dart:math' as math;

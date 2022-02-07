@@ -3,8 +3,8 @@ import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'package:flutter_useful/pages/base/normal_stateful_widget.dart';
 import 'package:flutter_useful/widgets/card_item_widget.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/mod_staggered_grid_view_0_4_0.dart';
 
 class StaggeredGridViewPage extends NormalStatefulWidget {
   const StaggeredGridViewPage({Key? key}) : super(key: key);
@@ -14,27 +14,27 @@ class StaggeredGridViewPage extends NormalStatefulWidget {
 }
 
 class StaggeredGridViewPageState extends NormalStatefulWidgetState<StaggeredGridViewPage> {
-  final List<StaggeredTile> _tiles = <StaggeredTile>[
-    const StaggeredTile.count(2, 2),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 2),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(4, 1),
-    const StaggeredTile.count(4, 2),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 4),
-    const StaggeredTile.count(1, 3),
-    const StaggeredTile.count(1, 2),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
-    const StaggeredTile.count(1, 1),
+  final List<ModStaggeredTile> _tiles = <ModStaggeredTile>[
+    const ModStaggeredTile.count(2, 2),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 2),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(4, 1),
+    const ModStaggeredTile.count(4, 2),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 4),
+    const ModStaggeredTile.count(1, 3),
+    const ModStaggeredTile.count(1, 2),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
+    const ModStaggeredTile.count(1, 1),
   ];
 
   @override
@@ -49,7 +49,7 @@ class StaggeredGridViewPageState extends NormalStatefulWidgetState<StaggeredGrid
       slivers: <Widget>[
         SliverPadding(
           padding: const EdgeInsets.all(10),
-          sliver: SliverStaggeredGrid.countBuilder(
+          sliver: ModSliverStaggeredGrid.countBuilder(
             crossAxisCount: 4,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,

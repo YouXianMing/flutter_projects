@@ -7,7 +7,7 @@ packages:
       name: async
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.8.1"
+    version: "2.8.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -42,7 +42,7 @@ packages:
       name: characters
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.1.0"
+    version: "1.2.0"
   charcode:
     dependency: transitive
     description:
@@ -84,7 +84,7 @@ packages:
       name: dio
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "4.0.1"
+    version: "4.0.4"
   english_words:
     dependency: transitive
     description:
@@ -180,7 +180,7 @@ packages:
       name: flutter_staggered_grid_view
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.4.1"
+    version: "0.6.1"
   flutter_sticky_header:
     dependency: transitive
     description:
@@ -204,7 +204,7 @@ packages:
       name: get
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "4.3.8"
+    version: "4.6.1"
   html_unescape:
     dependency: transitive
     description:
@@ -274,7 +274,7 @@ packages:
       name: matcher
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.12.10"
+    version: "0.12.11"
   meta:
     dependency: transitive
     description:
@@ -378,10 +378,10 @@ packages:
     description:
       path: project_base_libs_pkg
       ref: HEAD
-      resolved-ref: bff8bee4b9d2047f654b2337f7e8f6b4a21a4d88
+      resolved-ref: "780fa394f0fe86b0db78f4efa969d6b7d5b7d17c"
       url: "https://github.com/YouXianMing/flutter_project_pkg.git"
     source: git
-    version: "1.0.0"
+    version: "1.0.2"
   pull_to_refresh:
     dependency: transitive
     description:
@@ -416,14 +416,28 @@ packages:
       name: shared_preferences
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.7"
+    version: "2.0.13"
+  shared_preferences_android:
+    dependency: transitive
+    description:
+      name: shared_preferences_android
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.10"
+  shared_preferences_ios:
+    dependency: transitive
+    description:
+      name: shared_preferences_ios
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.9"
   shared_preferences_linux:
     dependency: transitive
     description:
       name: shared_preferences_linux
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.2"
+    version: "2.0.4"
   shared_preferences_macos:
     dependency: transitive
     description:
@@ -444,14 +458,14 @@ packages:
       name: shared_preferences_web
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.2"
+    version: "2.0.3"
   shared_preferences_windows:
     dependency: transitive
     description:
       name: shared_preferences_windows
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.2"
+    version: "2.0.4"
   shimmer:
     dependency: "direct main"
     description:
@@ -533,7 +547,7 @@ packages:
       name: test_api
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.4.2"
+    version: "0.4.3"
   timer_count_down:
     dependency: "direct main"
     description:
@@ -568,14 +582,14 @@ packages:
       name: vector_math
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.1.0"
+    version: "2.1.1"
   waterfall_flow:
     dependency: transitive
     description:
       name: waterfall_flow
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "3.0.1"
+    version: "3.0.2"
   win32:
     dependency: transitive
     description:
@@ -598,5 +612,5 @@ packages:
     source: hosted
     version: "5.1.2"
 sdks:
-  dart: ">=2.13.0 <3.0.0"
-  flutter: ">=2.0.0"
+  dart: ">=2.14.0 <3.0.0"
+  flutter: ">=2.5.0"
