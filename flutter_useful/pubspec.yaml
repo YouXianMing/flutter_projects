@@ -48,7 +48,7 @@ dependencies:
   # 屏幕适配框架
   # https://pub.flutter-io.cn/packages/flutter_screenutil
   # Flutter: Android iOS Linux MacOS Web Windows
-  flutter_screenutil: ^5.0.0+2
+  flutter_screenutil: 5.1.0
 
   # HTML标签加载
   # https://pub.flutter-io.cn/packages/simple_html_css
