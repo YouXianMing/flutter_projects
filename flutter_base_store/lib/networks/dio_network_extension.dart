@@ -116,7 +116,7 @@ class NetworkConfig extends DioNetworkConfig {
   @override
   void startConfig(object) {
     super.startConfig(object);
-    if (AppConstant.isProductEnvironment != true) {
+    if (AppConstant.isProductEnvironment != true && AppConstant.useProxyIp) {
       if (PlatFormInfo.isIOS) {
         addiOSProxy(object['dio']);
       } else if (PlatFormInfo.isAndroid) {

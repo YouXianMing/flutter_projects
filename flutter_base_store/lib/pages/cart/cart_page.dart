@@ -51,7 +51,9 @@ class _CartPageState extends NormalStatefulWidgetState<CartPage> {
 
   @override
   Widget firstTimeLoadingWidgetStartLoading(BuildContext context) {
-    return firstTimeLoadingWidget.listenFuture(() => DioNetworkWith(NetURL.userCartProducts).startRequest()).onSuccess((d) {
+    return firstTimeLoadingWidget
+        .listenFuture(() => DioNetworkWith(NetURL.userCartProducts).startRequest())
+        .onSuccess((d) {
       appPrint(d.runtimeType);
       appPrint(d);
     });

@@ -28,6 +28,9 @@ class AppConstant {
 
   /// 是否是生产环境
   static bool get isProductEnvironment => const bool.fromEnvironment('dart.vm.product');
+
+  /// 是否使用代理
+  static bool get useProxyIp => false;
 }
 
 ////////////////////////////////////////////////////////
