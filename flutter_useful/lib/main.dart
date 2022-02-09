@@ -23,6 +23,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData.light(),
         debugShowCheckedModeBanner: false,
         builder: (context, widget) {
+          // https://github.com/OpenFlutter/flutter_screenutil/issues/329
+          // 解决ScreenUtilInit的 No MediaQuery widget ancestor found.
+          ScreenUtil.setContext(context);
           return widget!;
         },
         getPages: RouteConfig.getPages(),
