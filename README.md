@@ -10,7 +10,7 @@
 上述项目均从[flutter_project_pkg](https://github.com/YouXianMing/flutter_project_pkg)引入了名为project_base_libs_pkg的package，作为项目的基础组件库使用。该基础组件库不依赖于任何项目，自带了example，可以单独运行。以下是该组件库中一些重要的类：
 
 名字|描述
---|:--:
+:-|:-
 DioNetwork|对DioNetwork的初级封装
 AnimationsManager|简化动画使用的管理器
 SliverSection|将Sliver家族的控件封装到了SliverSection对象，简化Sliver家族控件的使用并添加了瀑布流、SectionHeader悬停的支持
@@ -24,8 +24,10 @@ BaseStatefulWidget|（抽象）基础的StatefulWidget，与BasePageBuildMixin�
 CustomTabBarWidget|简化TabBar的使用
 CustomWrapWidget|通过FlowDelegate实现的Wrap组件，高度无限，可以限定Wrap的行数
 FirstTimeLoadingWidget|首次加载的loading的Widget，是一个接收Future对象或者Future数组的Widget，加载成功该Widget会消失，加载失败会进入失败重试的Widget，可以定制请求的界面以及失败重试界面
-FlutterSpinKitWidget|对第三方库[flutter_spinkit](https://pub.dev/packages/flutter_spinkit)进行的封装
-LoadingAnimationWidget|对第三方库[loading_animations](https://pub.flutter-io.cn/packages/loading_animations)进行的封装
+IndicatorWidget|这是一个Indicator的容器类,使用了外观设计模式,隐藏各个不同的indicator的细节,提供统一的使用接口
+SpinKitIndicatorConfig|对第三方库[flutter_spinkit](https://pub.dev/packages/flutter_spinkit)进行的封装，用于IndicatorWidget
+CytrynIndicatorConfig|对第三方库[loading_animations](https://pub.flutter-io.cn/packages/loading_animations)进行的封装，用于IndicatorWidget
+TinoGuoIndicatorConfig|对第三方库[loading_indicator](https://pub.dev/packages/loading_indicator)进行的封装，用于IndicatorWidget
 SafeAreaPaddingWidget|添加安全距离的Widget
 SliversRefreshWidget|对[pull_to_refresh](https://pub.flutter-io.cn/packages/pull_to_refresh)进行封装，简化其使用
 StackContainer|一个Stack的管理器
