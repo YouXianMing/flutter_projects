@@ -254,6 +254,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.4.0"
+  loading_animation_widget:
+    dependency: transitive
+    description:
+      name: loading_animation_widget
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.1.0+0"
   loading_animations:
     dependency: transitive
     description:
@@ -378,10 +385,10 @@ packages:
     description:
       path: project_base_libs_pkg
       ref: HEAD
-      resolved-ref: "780fa394f0fe86b0db78f4efa969d6b7d5b7d17c"
+      resolved-ref: "775ee65992564369e8509cab8e57917385cb9eec"
       url: "https://github.com/YouXianMing/flutter_project_pkg.git"
     source: git
-    version: "1.0.2"
+    version: "1.0.3"
   pull_to_refresh:
     dependency: transitive
     description:
@@ -423,28 +430,28 @@ packages:
       name: shared_preferences_android
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.10"
+    version: "2.0.11"
   shared_preferences_ios:
     dependency: transitive
     description:
       name: shared_preferences_ios
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.9"
+    version: "2.0.10"
   shared_preferences_linux:
     dependency: transitive
     description:
       name: shared_preferences_linux
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.4"
+    version: "2.1.0"
   shared_preferences_macos:
     dependency: transitive
     description:
       name: shared_preferences_macos
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.2"
+    version: "2.0.3"
   shared_preferences_platform_interface:
     dependency: transitive
     description:
@@ -465,7 +472,7 @@ packages:
       name: shared_preferences_windows
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.0.4"
+    version: "2.1.0"
   shimmer:
     dependency: "direct main"
     description:
@@ -613,4 +620,4 @@ packages:
     version: "5.1.2"
 sdks:
   dart: ">=2.14.0 <3.0.0"
-  flutter: ">=2.5.0"
+  flutter: ">=2.8.0"

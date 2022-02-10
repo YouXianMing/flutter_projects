@@ -26,7 +26,6 @@ class ThirdLibPage extends NormalStatelessWidget with WidgetEventCallbackMixin {
           items: [
             CartItemModel(title: 'HTML.toTextSpan', route: RouteConfig.htmlToTextSpanPage),
             CartItemModel(title: 'Loading Animations', route: RouteConfig.loadingAnimationsPage),
-            CartItemModel(title: 'Loading Indicators', route: RouteConfig.loadingIndicatorsPage),
             CartItemModel(title: 'Shimmer', route: RouteConfig.shimmerPage),
             CartItemModel(title: 'StaggeredGridView', route: RouteConfig.staggeredGridViewPage),
             CartItemModel(title: 'LineIcons', route: RouteConfig.lineIconsPage),

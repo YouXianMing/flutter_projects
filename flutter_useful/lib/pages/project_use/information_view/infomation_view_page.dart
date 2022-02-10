@@ -105,8 +105,7 @@ class InformationViewTestModel {
                 );
               })
               .show()
-              .hide(
-                  afterDelay: const Duration(seconds: 3), complete: (v) => widget.outerStackContainer.deleteWidget(v));
+              .hide(afterDelay: const Duration(seconds: 3), complete: (v) => widget.outerStackContainer.deleteWidget(v));
         });
   }
 
@@ -127,12 +126,13 @@ class InformationViewTestModel {
                   color: Colors.transparent,
                   child: Container(
                     padding: const EdgeInsets.all(15),
-                    decoration:
-                        const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: LoadingAnimationWidget(
-                      type: LoadingAnimation.bouncingGridCircle,
-                      borderColor: Util.randomOpaqueColor,
-                      backgroundColor: Colors.transparent,
+                    decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+                    child: IndicatorWidget(
+                      config: CytrynIndicatorConfig(
+                        type: CytrynIndicatorType.bouncingGridCircle,
+                        borderColor: Colors.transparent,
+                        backgroundColor: Colors.blueGrey,
+                      ),
                     ),
                   ),
                 );
@@ -190,8 +190,7 @@ class InformationViewTestModel {
               child: Container(
                 width: Get.width * 0.75,
                 padding: const EdgeInsets.only(top: 10),
-                decoration:
-                    const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+                decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -237,8 +236,7 @@ class InformationViewTestModel {
               height: Get.height,
               child: Column(
                 children: [
-                  Container(padding: EdgeInsets.only(top: Get.height * 0.35), color: Colors.transparent)
-                      .addTapEvent(() => v.hide()),
+                  Container(padding: EdgeInsets.only(top: Get.height * 0.35), color: Colors.transparent).addTapEvent(() => v.hide()),
                   Expanded(
                     child: Container(
                       width: double.infinity,
@@ -252,8 +250,7 @@ class InformationViewTestModel {
                             child: Stack(
                               alignment: Alignment.center,
                               children: [
-                                WidgetsFactory.text('Sheet', color: Colors.black, fontSize: 28.sp)
-                                    .addDefaultTextStyle(),
+                                WidgetsFactory.text('Sheet', color: Colors.black, fontSize: 28.sp).addDefaultTextStyle(),
                                 Positioned(
                                   right: 5,
                                   child: const Icon(Icons.close).addTapEvent(() => v.hide()),
@@ -286,8 +283,7 @@ class InformationViewTestModel {
                                           height: 90.w, textColor: Util.randomOpaqueColor, alignment: Alignment.center)
                                       .addDefaultTextStyle(),
                                 ),
-                                SliverBoxAdapterSection.widget(
-                                    builder: (v) => const SafeAreaPaddingWidget(type: SafeAreaPadding.bottom)),
+                                SliverBoxAdapterSection.widget(builder: (v) => const SafeAreaPaddingWidget(type: SafeAreaPadding.bottom)),
                               ],
                             ),
                           ),
@@ -311,8 +307,7 @@ class InformationViewTestModel {
           InformationView(
             type: AnimatedWidgetType.sheetView,
             waitForBuild: true,
-            config: AnimatedSheetViewConfig(
-                backgroundColor: Colors.black.withAlpha(75), type: AnimatedSheetType.fromTopToBottom),
+            config: AnimatedSheetViewConfig(backgroundColor: Colors.black.withAlpha(75), type: AnimatedSheetType.fromTopToBottom),
           ).inStackContainer(widget.outerStackContainer).setWidgetBuilder((v) {
             return Container(
               color: Colors.transparent,
@@ -329,8 +324,7 @@ class InformationViewTestModel {
                           Expanded(
                             child: CustomScrollView(
                               slivers: [
-                                SliverBoxAdapterSection.widget(
-                                    builder: (v) => const SafeAreaPaddingWidget(type: SafeAreaPadding.top)),
+                                SliverBoxAdapterSection.widget(builder: (v) => const SafeAreaPaddingWidget(type: SafeAreaPadding.top)),
                                 SliverListSection.builderTypeWidget(
                                   items: [
                                     Util.randomWordPairAsCamelCase,
@@ -363,8 +357,7 @@ class InformationViewTestModel {
                             child: Stack(
                               alignment: Alignment.center,
                               children: [
-                                WidgetsFactory.text('Sheet', color: Colors.black, fontSize: 28.sp)
-                                    .addDefaultTextStyle(),
+                                WidgetsFactory.text('Sheet', color: Colors.black, fontSize: 28.sp).addDefaultTextStyle(),
                                 Positioned(
                                   right: 5,
                                   child: const Icon(Icons.close).addTapEvent(() => v.hide()),
@@ -376,8 +369,7 @@ class InformationViewTestModel {
                       ),
                     ),
                   ),
-                  Container(padding: EdgeInsets.only(top: Get.height * 0.35), color: Colors.transparent)
-                      .addTapEvent(() => v.hide()),
+                  Container(padding: EdgeInsets.only(top: Get.height * 0.35), color: Colors.transparent).addTapEvent(() => v.hide()),
                 ],
               ),
             );

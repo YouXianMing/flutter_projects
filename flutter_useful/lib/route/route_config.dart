@@ -29,7 +29,6 @@ import 'package:flutter_useful/pages/third_libs/html_text/html_to_text_span_page
 import 'package:flutter_useful/pages/third_libs/line_icons/line_icons_page.dart';
 import 'package:flutter_useful/pages/third_libs/liquid_progress_indicator/liquid_progress_indicator_page.dart';
 import 'package:flutter_useful/pages/third_libs/loading_animations/loading_animations_page.dart';
-import 'package:flutter_useful/pages/third_libs/loading_indicators/loading_indicators_page.dart';
 import 'package:flutter_useful/pages/third_libs/read_more/read_more_page.dart';
 import 'package:flutter_useful/pages/third_libs/scratcher/scratcher_page.dart';
 import 'package:flutter_useful/pages/third_libs/shimmer/shimmer_page.dart';
@@ -76,7 +75,6 @@ class RouteConfig {
   static const String thirdLibPage = '/ThirdLibPage';
   static const String htmlToTextSpanPage = '/HtmlToTextSpanPage';
   static const String loadingAnimationsPage = '/LoadingAnimationsPage';
-  static const String loadingIndicatorsPage = '/LoadingIndicatorsPage';
   static const String shimmerPage = '/ShimmerPage';
   static const String staggeredGridViewPage = '/StaggeredGridViewPage';
   static const String lineIconsPage = '/LineIconsPage';
@@ -128,7 +126,6 @@ class RouteConfig {
       GetPage(name: RouteConfig.thirdLibPage, page: () => ThirdLibPage()),
       GetPage(name: RouteConfig.htmlToTextSpanPage, page: () => HtmlToTextSpanPage()),
       GetPage(name: RouteConfig.loadingAnimationsPage, page: () => LoadingAnimationsPage()),
-      GetPage(name: RouteConfig.loadingIndicatorsPage, page: () => LoadingIndicatorsPage()),
       GetPage(name: RouteConfig.shimmerPage, page: () => ShimmerPage()),
       GetPage(name: RouteConfig.staggeredGridViewPage, page: () => const StaggeredGridViewPage()),
       GetPage(name: RouteConfig.lineIconsPage, page: () => LineIconsPage()),
