@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_useful/pages/unknown/unknown_page.dart';
 import 'package:flutter_useful/route/route_config.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 void main() async {
   /// 确保所有的插件都初始化好了

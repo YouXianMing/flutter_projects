@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 import 'tar_bar_button.dart';
 
 class TabBarButtonViewController extends GetxController {

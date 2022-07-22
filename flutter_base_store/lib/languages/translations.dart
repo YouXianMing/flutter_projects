@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 import 'arabs_translations.dart';
 import 'english_translations.dart';
 import 'chinese_translations.dart';

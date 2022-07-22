@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:dio/adapter.dart';
+import 'package:project_base_libs_pkg/third_lib_dio_adapter.dart';
 import 'package:flutter_base_store/headers.dart';
 import 'package:flutter_base_store/networks/proxy_ip.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
@@ -23,13 +23,13 @@ extension DioNetworkExtension on BaseNetwork {
     if (AppConstant.enableNetworkDebugInfo && debugInfo != null && debugInfo is NetURL) {
       NetURL netURL = debugInfo;
       String str = '------------------------------------------------------\n';
-      str += (netURL.method == NetworkMethod.get ? '📶 [GET] ' : '📶 [POST] ') + netURL.info + '\n';
-      str += netURL.url + '\n';
+      str += '${netURL.method == NetworkMethod.get ? '📶 [GET] ' : '📶 [POST] '}${netURL.info}\n';
+      str += '${netURL.url}\n';
       if (headers != null) {
-        str += '请求头部: ' + headers.toString() + '\n';
+        str += '请求头部: $headers\n';
       }
       if (parameters != null) {
-        str += '请求参数: ' + parameters.toString() + '\n';
+        str += '请求参数: $parameters\n';
       }
       str += '\n';
 
@@ -39,9 +39,7 @@ extension DioNetworkExtension on BaseNetwork {
   }
 
   void startRequestAndListen(
-      {Function(ResultModel, BaseNetwork)? onSuccess,
-      Function(ResultModel, BaseNetwork)? onError,
-      dynamic loadingWidget}) {
+      {Function(ResultModel, BaseNetwork)? onSuccess, Function(ResultModel, BaseNetwork)? onError, dynamic loadingWidget}) {
     // 显示菊花
     _loadingWidgetShow(loadingWidget);
     startRequest().then((value) {
@@ -130,6 +128,7 @@ class NetworkConfig extends DioNetworkConfig {
     (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (HttpClient client) {
       client.badCertificateCallback = (X509Certificate cert, String host, int port) => true;
       client.findProxy = (uri) => androidProxyIpString;
+      return null;
     };
   }
 
@@ -138,6 +137,7 @@ class NetworkConfig extends DioNetworkConfig {
     (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (HttpClient client) {
       client.badCertificateCallback = (X509Certificate cert, String host, int port) => true;
       client.findProxy = (uri) => iOSProxyIpString;
+      return null;
     };
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class UnknownPage extends StatelessWidget {
   const UnknownPage({Key? key}) : super(key: key);

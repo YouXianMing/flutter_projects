@@ -3,7 +3,7 @@ import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'package:flutter_useful/pages/base/normal_stateless_widget.dart';
 import 'package:flutter_useful/widgets/card_item_widget.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

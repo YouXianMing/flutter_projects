@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_useful/pages/tab_bar/widgets/tar_bar_button.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class TabBarButtonViewController extends GetxController {
   final RxInt selectIndex = 0.obs;

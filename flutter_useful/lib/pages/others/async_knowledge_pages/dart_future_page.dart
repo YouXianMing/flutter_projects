@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_useful/pages/base/normal_stateful_widget.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
-import 'package:flutter_useful/pages/base/normal_stateless_widget.dart';
 import 'package:flutter_useful/widgets/app_widgets.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
-class DartFuturePage extends NormalStatelessWidget {
-  DartFuturePage({Key? key}) : super(key: key);
+class DartFuturePage extends NormalStatefulWidget {
+  const DartFuturePage({Key? key}) : super(key: key);
 
+  @override
+  BaseStatefulWidgetState<BaseStatefulWidget> createWidgetState() => DartFuturePageState();
+}
+
+class DartFuturePageState extends NormalStatefulWidgetState<DartFuturePage> {
   @override
   PreferredSizeWidget? appBar(BuildContext context) => NormalAppBar(context: context, title: NormalAppBar.titleWidget(Get.arguments));
 
@@ -153,11 +158,11 @@ class DartFuturePage extends NormalStatelessWidget {
               });
             }),
         const ListItemCell(content: 'Future的类方法', type: ListItemViewType.title),
-        ListItemCell(content: '[static] Future.forEach\n配合await与async将迭代器中有限的元素按照顺序进行处理', onTap: (_) => _forEachExample(context)),
+        ListItemCell(content: '[static] Future.forEach\n配合await与async将迭代器中有限的元素按照顺序进行处理', onTap: (_) => _forEachExample()),
         ListItemCell(
             content: '[static] Future.doWhile\n配合await与async进行while循环操作,直到返回false',
             onTap: (_) {
-              _doWhileExample(context);
+              _doWhileExample();
             }),
         ListItemCell(
             content: '[static Future<List<T>>] Future.wait\n等待多个异步任务都执行结束后才进行一些操作',
@@ -194,40 +199,40 @@ class DartFuturePage extends NormalStatelessWidget {
     );
   }
 
-  void _forEachExample(BuildContext context) async {
+  void _forEachExample() async {
     innerLoading.show();
 
-    List<int> _lists = [1, 2, 3, 4, 5, 6];
-    List<int> _output = [];
-    await Future.forEach(_lists, (value) async {
+    List<int> lists = [1, 2, 3, 4, 5, 6];
+    List<int> output = [];
+    await Future.forEach(lists, (value) async {
       int result = await _someAsync();
       appPrint('输入值:$value 结果:$result');
-      _output.add(result);
+      output.add(result);
     });
-    appPrint(_output);
+    appPrint(output);
     innerLoading.hide();
-    showMessage(context, _output.toString());
+    if (mounted) showMessage(context, output.toString());
   }
 
-  void _doWhileExample(BuildContext context) async {
+  void _doWhileExample() async {
     innerLoading.show();
 
     int count = 0;
-    List<int> _output = [];
+    List<int> output = [];
     await Future.doWhile(() async {
       if (count++ == 8) {
         return false;
       } else {
         int result = await _someAsync();
         appPrint('结果$result');
-        _output.add(result);
+        output.add(result);
         return true;
       }
     });
 
-    appPrint(_output);
+    appPrint(output);
     innerLoading.hide();
-    showMessage(context, _output.toString());
+    if (mounted) showMessage(context, output.toString());
   }
 
   Future<int> _someAsync() async {

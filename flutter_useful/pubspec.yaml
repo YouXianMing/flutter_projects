@@ -93,7 +93,7 @@ dependencies:
       path: project_base_libs_pkg
 
 dev_dependencies:
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
 

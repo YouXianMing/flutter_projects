@@ -34,7 +34,7 @@ import 'package:flutter_useful/pages/third_libs/scratcher/scratcher_page.dart';
 import 'package:flutter_useful/pages/third_libs/shimmer/shimmer_page.dart';
 import 'package:flutter_useful/pages/third_libs/third_lib_page.dart';
 import 'package:flutter_useful/pages/third_libs/timer_count_down/timer_count_donw_page.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class RouteConfig {
   /// tabBar

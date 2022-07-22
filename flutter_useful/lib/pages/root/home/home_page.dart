@@ -3,7 +3,7 @@ import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'package:flutter_useful/pages/base/normal_stateful_widget.dart';
 import 'package:flutter_useful/route/route_config.dart';
 import 'package:flutter_useful/widgets/card_item_widget.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class HomePage extends NormalStatefulWidget {
   const HomePage({Key? key}) : super(key: key);

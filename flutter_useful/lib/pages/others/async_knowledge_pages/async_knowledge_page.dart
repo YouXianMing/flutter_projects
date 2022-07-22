@@ -11,7 +11,7 @@ import 'package:flutter_useful/pages/others/async_knowledge_pages/stream_builder
 import 'package:flutter_useful/widgets/app_widgets.dart';
 import 'package:flutter_useful/widgets/card_item_widget.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class AsyncKnowledgePage extends NormalStatelessWidget {
   AsyncKnowledgePage({Key? key}) : super(key: key);
@@ -31,7 +31,7 @@ class AsyncKnowledgePage extends NormalStatelessWidget {
       cells: [
         ListItemCell(content: 'async 与 await', onTap: (s) => Get.to(() => AsyncAwaitExamplePage(), arguments: s)),
         ListItemCell(content: 'Dart的事件循环', onTap: (s) => Get.to(() => DartAsyncPage(), arguments: s)),
-        ListItemCell(content: 'Future', onTap: (s) => Get.to(() => DartFuturePage(), arguments: s)),
+        ListItemCell(content: 'Future', onTap: (s) => Get.to(() => const DartFuturePage(), arguments: s)),
         ListItemCell(content: 'Stream', onTap: (s) => Get.to(() => const DartStreamPage(), arguments: s)),
         ListItemCell(content: 'FutureBuilder', onTap: (s) => Get.to(() => FutureBuilderPage(), arguments: s)),
         ListItemCell(content: 'StreamBuilder', onTap: (s) => Get.to(() => const StreamBuilderPage(), arguments: s)),

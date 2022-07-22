@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_useful/pages/base/normal_stateless_widget.dart';
 import 'package:flutter_useful/widgets/app_widgets.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class DartAsyncPage extends NormalStatelessWidget {
   DartAsyncPage({Key? key}) : super(key: key);

@@ -3,6 +3,7 @@ import 'package:project_base_libs_pkg/base_file_headers.dart';
 
 class ItemDetailsPage extends NormalStatefulWidget {
   final PageArguments? arguments;
+
   const ItemDetailsPage({this.arguments, Key? key}) : super(key: key);
 
   @override
@@ -11,8 +12,7 @@ class ItemDetailsPage extends NormalStatefulWidget {
 
 class _ItemDetailsPageState extends NormalStatefulWidgetState<ItemDetailsPage> {
   @override
-  PreferredSizeWidget? appBar(BuildContext context) =>
-      NormalAppBar(context: context, title: NormalAppBar.titleWidget('商品详情页'));
+  PreferredSizeWidget? appBar(BuildContext context) => NormalAppBar(context: context, title: NormalAppBar.titleWidget('商品详情页'));
 
   @override
   Widget body(BuildContext context) {
@@ -25,7 +25,7 @@ class _ItemDetailsPageState extends NormalStatefulWidgetState<ItemDetailsPage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                WidgetsFactory.text('id:' + map['id'], fontSize: 30, color: Colors.black),
+                WidgetsFactory.text('id: ${map['id']}', fontSize: 30, color: Colors.black),
                 AppButton(
                   style: AppButtonStyle.blue,
                   onTap: () => innerLoading.show().hide(afterDelay: const Duration(seconds: 2)),

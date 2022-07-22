@@ -4,7 +4,7 @@ import 'package:project_base_libs_pkg/base_file_headers.dart';
 import 'package:flutter_useful/pages/base/normal_stateful_widget.dart';
 import 'package:flutter_useful/widgets/app_widgets.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 
 class DartStreamPage extends NormalStatefulWidget {
   const DartStreamPage({Key? key}) : super(key: key);
@@ -98,7 +98,8 @@ class _DartStreamPageState extends NormalStatefulWidgetState<DartStreamPage> {
 
               StreamSubscription subscription = stream.listen(
                 (data) => showMessage(context, data, duration: const Duration(seconds: 1)),
-                onError: (e) => showMessage(context, (e as AssertionError).message.toString(), duration: const Duration(seconds: 1), success: false),
+                onError: (e) =>
+                    showMessage(context, (e as AssertionError).message.toString(), duration: const Duration(seconds: 1), success: false),
                 onDone: () => innerLoading.hide(),
               );
 
@@ -181,7 +182,7 @@ class _DartStreamPageState extends NormalStatefulWidgetState<DartStreamPage> {
             onTap: (_) {
               Stream.fromIterable(
                 ['1', '2', '3', '4', '5'],
-              ).map((event) => event + '->String').listen(
+              ).map((event) => '$event->String').listen(
                     (event) => appPrint(event),
                     onDone: () => appPrint('结束'),
                   );
@@ -262,7 +263,8 @@ class _DartStreamPageState extends NormalStatefulWidgetState<DartStreamPage> {
 
   void _streamOperation(index) async {
     List values = [1, 1, 2, 3, 4, 5, 6, 7, 7, 8, 9, 10, 11, 12];
-    Stream<dynamic> stream = Stream.periodic(const Duration(milliseconds: 50), (index) => values[index]).take(10).skipWhile((element) => element < 7);
+    Stream<dynamic> stream =
+        Stream.periodic(const Duration(milliseconds: 50), (index) => values[index]).take(10).skipWhile((element) => element < 7);
 
     switch (index) {
       case 1:

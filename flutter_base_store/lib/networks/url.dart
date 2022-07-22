@@ -27,7 +27,7 @@ class NetURL {
     return NetURL(
       info: '购物车列表',
       method: NetworkMethod.get,
-      url: _baseURL + '/user/cart/products',
+      url: '$_baseURL/user/cart/products',
     );
   }
 }

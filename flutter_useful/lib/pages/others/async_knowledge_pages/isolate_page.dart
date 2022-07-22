@@ -2,7 +2,7 @@ import 'dart:isolate';
 import 'package:flutter/material.dart';
 import 'package:flutter_useful/pages/base/normal_stateful_widget.dart';
 import 'package:flutter_useful/widgets/custom_app_bar.dart';
-import 'package:get/get.dart';
+import 'package:project_base_libs_pkg/third_lib_get.dart';
 import 'package:project_base_libs_pkg/base_file_headers.dart';
 
 class IsolatePage extends NormalStatefulWidget {

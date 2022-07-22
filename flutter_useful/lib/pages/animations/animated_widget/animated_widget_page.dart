@@ -44,10 +44,10 @@ class LogoApp extends StatefulWidget {
   const LogoApp({Key? key}) : super(key: key);
 
   @override
-  _LogoAppState createState() => _LogoAppState();
+  LogoAppState createState() => LogoAppState();
 }
 
-class _LogoAppState extends State<LogoApp> with TickerProviderStateMixin {
+class LogoAppState extends State<LogoApp> with TickerProviderStateMixin {
   late AnimationController controller;
   Animation<double>? animation;
 
