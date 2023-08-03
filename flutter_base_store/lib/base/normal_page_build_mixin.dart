@@ -22,8 +22,8 @@ mixin NormalPageBuildMixin {
 
   /// Future加载控件
   final FirstTimeLoadingWidget firstTimeLoadingWidget = FirstTimeLoadingWidget(
-    loadingWidgetBuilder: () => const FirstTimeLoadingIndicatorWidget(),
-    errorWidgetBuilder: (tapToReloadCallback) => FirstTimeLoadingErrorReloadWidget(onPressed: tapToReloadCallback),
+    loadingWidgetBuilder: (_) => const FirstTimeLoadingIndicatorWidget(),
+    errorWidgetBuilder: (tapToReloadCallback, _) => FirstTimeLoadingErrorReloadWidget(onPressed: tapToReloadCallback),
   );
 
   /// 内部StackContainer
